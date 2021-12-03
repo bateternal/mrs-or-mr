@@ -1,0 +1,145 @@
+
+body{
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBdNOn9XSrtlL7Td0S8f9KyRdctuDBVtekuQ&usqp=CAU) no-repeat center center fixed; 
+    background-size: cover;
+    overflow: hidden;
+}
+
+.error{
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    background-color: red;
+    text-align: center;
+    padding: 2%;
+    transform: translate(-50%, -50%);            
+}
+
+.box-container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 0%;
+    padding-right: 2%;
+    padding-left: 2%;
+    width: 30%;
+    height: 40%;
+    border-radius: 15px;
+    border-color: gray;
+    border-style: solid;
+    border-width: thin;
+    display: flex;
+    flex-direction: row;
+    gap: 12rem;
+}
+
+.box-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.box-container > div{
+    width: 50%;
+    margin-left: 2%;
+}
+
+.name-box{
+    padding-top: 6%;
+    font-size: 0.7rem;
+    margin-bottom: 10%;
+    /*height: 2%;*/
+}
+
+.my-input{
+    border-style: solid;
+    border-width: thin;
+    border-color: gray;
+}
+
+.sex{
+    witdh: 5%;
+    text-align: center;
+    font-size: 0.6rem;
+    padding-bottom: 4%;
+}
+
+.prediction-size{
+    font-size: 0.6rem;   
+}
+
+.target-gender{
+    padding-top: 2%;
+    padding-bottom: 4%;
+}
+
+.gender-box{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.gender-style{
+    display: flex;
+    flex-direction: row;
+}
+
+.mybutton{
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+    border-style: solid;
+    border-width: thin;
+    border-color: gray;
+    text-align: center;
+    width: 40%;
+    padding-bottom: 0.1rem;
+    margin-bottom: 0.2rem;
+    font-size: 0.7rem;
+    border-radius: 0.2rem;
+}
+
+.mybutton:hover{
+
+    cursor: pointer;
+}
+
+.mybutton:active {
+    border-color: black;
+}
+
+.alert{
+    margin-bottom: 10%;
+    font-size: 130%;
+}
+
+.clear-save{
+    margin-top: 30%;
+    padding: 2%;
+    border-style: dotted;
+    border-width: thin;
+    border-color: gray;
+}
+
+.gender-box{
+    border: solid;
+    border-width: 0;
+    border-color: red;
+    border-radius: 20px;
+
+}
+
+.gender-alert{
+    color: red;
+    font-size: 0.7rem;
+}
+
+input[type=radio] {
+    border: 0px;
+    height: 0.6em;
+}

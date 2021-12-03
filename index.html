@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>mr or mrs</title>
+    <link rel="stylesheet" href="static/css/app.css">
+    <script src="static/js/app.js"></script>
+</head>
+<body>
+    <div class="box-container">
+        <div class="box-form">
+            <h3>Mr. or Ms.?</h3>
+            <div class="name-box">
+                <span>Name </span> &nbsp;
+                <input onkeypress="return /[a-zA-Z_]/i.test(event.key)" maxlength="255" size="8" type="" name="" class="my-input" id="inputid">
+            </div>
+            <div class="gender-alert" id="genderalert2" hidden>&nbsp;please enter name</div>
+            <div class="gender-box" id="genderbox">
+                <div class="male gender-style">
+                    <input type="radio" id="male" name="selectgender" value="male">
+                    <span class="sex">&nbsp; Male</span>
+                </div>
+                <div class="female gender-style">
+                    <input type="radio" id="female" name="selectgender" value="female">
+                    <span class="sex">Female</span>
+                </div>
+                <div class="gender-alert" id="genderalert" hidden>&nbsp;please choose gender</div>
+            </div>
+            <div class="mybutton" onclick="submit();">
+                submit
+            </div>
+            <div class="mybutton" onclick="save();">
+                save
+            </div>
+        </div>
+        <div class="prediction">
+            <h3>Prediction</h3>
+            <div class="target-gender prediction-size" id="gender">
+                
+            </div>
+            <div class="gender-prediction prediction-size" id="prob">
+                
+            </div>
+            <div class="clear-save" id="clearsave" hidden>
+                <div class="alert"><b id="message">Saved Answer</b></div>
+                <div class="mybutton" onclick="clean();">
+                    clear
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="error" id="error" hidden>
+        مشکلی وجود دارد لطفا دوباره امتحان کنید.
+    </div>
+</body>
+</html>
